@@ -745,10 +745,13 @@ html { scroll-behavior: smooth; }
 
 /* ── Responsive: tablet / mobile ────────────────────────────────────── */
 @media (max-width: 768px) {
-  .am-nav { padding: 16px 20px; }
-  .am-nav-left { gap: 16px; }
-  /* Hide the third nav link on small screens to avoid overlap with logo */
-  .am-nav-left .am-nav-link:nth-child(3) { display: none; }
+  .am-nav {
+    padding: 16px 20px;
+    justify-content: space-between;
+  }
+  .am-nav-left { display: none; }
+  .am-nav-right span { display: none; }
+  .am-nav-logo { font-size: 15px; }
 
   .am-hero { height: 460px; }
   .am-hero h1 { font-size: 44px; }
@@ -796,7 +799,7 @@ html { scroll-behavior: smooth; }
 }
 
 @media (max-width: 480px) {
-  .am-nav-logo { font-size: 16px; }
+  .am-nav-logo { font-size: 13px; }
   .am-hero { height: 400px; }
   .am-hero h1 { font-size: 36px; }
   .am-about h2, .am-contact h2 { font-size: 28px; }
