@@ -6,7 +6,10 @@
       "Bash(git add *)",
       "Bash(git commit *)",
       "Bash(git branch *)",
-      "Bash(git remote *)"
+      "Bash(git remote *)",
+      "Bash(ssh *)",
+      "Bash(gh --version)",
+      "Bash(git ls-tree *)"
     ]
   }
 }
