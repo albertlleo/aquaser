@@ -3,10 +3,15 @@
   const video = document.querySelector('.am-hero-video');
   if (!video) return;
 
-  video.addEventListener('canplay', function onCanPlay() {
-    video.closest('.am-hero').classList.add('has-video');
-    video.removeEventListener('canplay', onCanPlay);
-  });
+  const hero = video.closest('.am-hero');
+
+  function activate() { hero.classList.add('has-video'); }
+
+  video.addEventListener('canplay',    activate, { once: true });
+  video.addEventListener('loadeddata', activate, { once: true });
+  video.addEventListener('error',      function () { hero.classList.remove('has-video'); }, { once: true });
+
+  if (video.readyState >= 2) activate();
 })();
 
 /* ── Nav shadow on scroll ───────────────────────────────────────────── */
