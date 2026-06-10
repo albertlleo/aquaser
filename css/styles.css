@@ -120,7 +120,7 @@ html { scroll-behavior: smooth; }
 }
 
 .am-hero.has-video .am-hero-overlay {
-  background: rgba(10, 20, 30, 0.45);
+  background: transparent;
 }
 
 /* CSS gradient fallback — always visible behind the video */
@@ -308,7 +308,7 @@ html { scroll-behavior: smooth; }
 }
 
 .am-about-img {
-  background: linear-gradient(180deg, #B8CEDC 0%, #90B0C4 100%);
+  background: url('../images/about.jpg') center center / cover no-repeat;
   min-height: 440px;
   display: flex;
   flex-direction: column;
