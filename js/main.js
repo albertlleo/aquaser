@@ -52,6 +52,44 @@ document.querySelectorAll('a[href^="#"]').forEach(function (link) {
   elements.forEach(function (el) { observer.observe(el); });
 })();
 
+/* ── Gallery auto-slider ────────────────────────────────────────────── */
+(function () {
+  const track = document.getElementById('galleryTrack');
+  const dotsContainer = document.getElementById('galleryDots');
+  if (!track || !dotsContainer) return;
+
+  const slides = track.querySelectorAll('.am-gallery-slide');
+  const total = slides.length;
+  let current = 0;
+  let timer;
+
+  slides.forEach(function (_, i) {
+    const dot = document.createElement('button');
+    dot.className = 'am-gallery-dot' + (i === 0 ? ' is-active' : '');
+    dot.setAttribute('aria-label', 'Slide ' + (i + 1));
+    dot.addEventListener('click', function () { goTo(i); restart(); });
+    dotsContainer.appendChild(dot);
+  });
+
+  function goTo(index) {
+    current = (index + total) % total;
+    track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    dotsContainer.querySelectorAll('.am-gallery-dot').forEach(function (d, i) {
+      d.classList.toggle('is-active', i === current);
+    });
+  }
+
+  function next() { goTo(current + 1); }
+
+  function start() { timer = setInterval(next, 4000); }
+  function restart() { clearInterval(timer); start(); }
+
+  track.closest('.am-gallery').addEventListener('mouseenter', function () { clearInterval(timer); });
+  track.closest('.am-gallery').addEventListener('mouseleave', start);
+
+  start();
+})();
+
 /* ── Contact form → mailto ──────────────────────────────────────────── */
 (function () {
   const form = document.getElementById('contactForm');
