@@ -367,7 +367,7 @@ html { scroll-behavior: smooth; }
 }
 
 .am-about p {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 2.0;
   color: rgba(13,30,42,0.5);
   font-weight: 200;
@@ -455,7 +455,7 @@ html { scroll-behavior: smooth; }
 }
 
 .am-session-desc {
-  font-size: 12px;
+  font-size: 15px;
   color: rgba(13,30,42,0.60);
   line-height: 1.7;
   letter-spacing: 0.04em;
