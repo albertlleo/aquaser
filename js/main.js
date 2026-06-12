@@ -90,10 +90,13 @@ document.querySelectorAll('a[href^="#"]').forEach(function (link) {
   start();
 })();
 
-/* ── Contact form → mailto ──────────────────────────────────────────── */
+/* ── Contact form → Formspree ───────────────────────────────────────── */
 (function () {
   const form = document.getElementById('contactForm');
   if (!form) return;
+
+  const submitBtn = form.querySelector('.am-form-submit');
+  const submitText = submitBtn.querySelector('span:last-child');
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -104,13 +107,26 @@ document.querySelectorAll('a[href^="#"]').forEach(function (link) {
 
     if (!name || !email || !message) return;
 
-    const subject = encodeURIComponent('Consulta – Watsu amb Maria');
-    const body    = encodeURIComponent(
-      'Hola Maria,\n\n' +
-      'Em dic ' + name + ' (' + email + ').\n\n' +
-      message + '\n\nGràcies!'
-    );
+    submitBtn.disabled = true;
+    submitText.textContent = 'Enviant...';
 
-    window.location.href = 'mailto:masnoudecoracio@gmail.com?subject=' + subject + '&body=' + body;
+    fetch('https://formspree.io/f/xjgdalak', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name: name, email: email, message: message })
+    })
+    .then(function (res) {
+      if (res.ok) {
+        submitText.textContent = 'Missatge enviat!';
+        form.reset();
+      } else {
+        submitText.textContent = 'Error, torna-ho a provar';
+        submitBtn.disabled = false;
+      }
+    })
+    .catch(function () {
+      submitText.textContent = 'Error, torna-ho a provar';
+      submitBtn.disabled = false;
+    });
   });
 })();
