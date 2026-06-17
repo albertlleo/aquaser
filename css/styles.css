@@ -27,10 +27,13 @@ html { scroll-behavior: smooth; }
   padding: 22px 36px;
   background: #EEF3F7;
   border-bottom: 0.5px solid rgba(13,30,42,0.1);
-  transition: box-shadow 0.3s ease;
+  transition: background 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease;
 }
 
 .am-nav--scrolled {
+  background: rgba(238,243,247,0.45);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   box-shadow: 0 2px 24px rgba(13,30,42,0.08);
 }
 
@@ -169,7 +172,7 @@ html { scroll-behavior: smooth; }
 .am-hero-line {
   width: 20px;
   height: 0.5px;
-  background: rgba(13,30,42,0.25);
+  background: #B8735A;
   margin: 0 auto 28px;
   transition: background 0.6s ease;
 }
@@ -201,7 +204,7 @@ html { scroll-behavior: smooth; }
 .am-hero-cta-line {
   width: 20px;
   height: 0.5px;
-  background: rgba(13,30,42,0.3);
+  background: #B8735A;
   flex-shrink: 0;
   transition: background 0.6s ease;
 }
@@ -288,7 +291,7 @@ html { scroll-behavior: smooth; }
 .am-keyword-line {
   width: 16px;
   height: 0.5px;
-  background: rgba(13,30,42,0.2);
+  background: #B8735A;
   margin: 0 auto 10px;
 }
 
@@ -362,7 +365,7 @@ html { scroll-behavior: smooth; }
 .am-about-line {
   width: 20px;
   height: 0.5px;
-  background: rgba(13,30,42,0.18);
+  background: #B8735A;
   margin-bottom: 24px;
 }
 
@@ -391,7 +394,7 @@ html { scroll-behavior: smooth; }
 .am-about-cta-line {
   width: 20px;
   height: 0.5px;
-  background: rgba(13,30,42,0.25);
+  background: #B8735A;
 }
 
 /* ── About reversed variant ─────────────────────────────────────────── */
@@ -569,7 +572,7 @@ html { scroll-behavior: smooth; }
 .am-contact-btn-line {
   width: 20px;
   height: 0.5px;
-  background: rgba(160,200,220,0.3);
+  background: #B8735A;
   flex-shrink: 0;
 }
 
@@ -644,7 +647,7 @@ html { scroll-behavior: smooth; }
   display: block;
   width: 20px;
   height: 0.5px;
-  background: rgba(13,30,42,0.25);
+  background: #B8735A;
   flex-shrink: 0;
 }
 
@@ -702,7 +705,7 @@ html { scroll-behavior: smooth; }
 }
 
 .am-gallery-dot.is-active {
-  background: #0D1E2A;
+  background: #B8735A;
   transform: scale(1.4);
 }
 
@@ -729,6 +732,28 @@ html { scroll-behavior: smooth; }
   font-size: 10px;
   letter-spacing: 0.18em;
   color: rgba(180,210,230,0.12);
+}
+
+/* ── Wave dividers ──────────────────────────────────────────────────── */
+@keyframes wave-flow {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.am-wave-divider {
+  display: block;
+  height: 50px;
+  line-height: 0;
+  overflow: hidden;
+}
+.am-wave-divider svg {
+  display: block;
+  width: 200%;
+  height: 50px;
+  animation: wave-flow 10s linear infinite;
+}
+.am-wave-divider svg.am-wave--reverse {
+  animation-direction: reverse;
 }
 
 /* ── Fade-in on scroll ──────────────────────────────────────────────── */
