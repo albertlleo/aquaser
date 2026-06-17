@@ -242,7 +242,7 @@ html { scroll-behavior: smooth; }
 }
 
 .am-strip-item {
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 0.24em;
   color: rgba(13,30,42,0.52);
   text-transform: uppercase;
@@ -341,7 +341,7 @@ html { scroll-behavior: smooth; }
 }
 
 .am-about-label {
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 0.28em;
   color: rgba(13,30,42,0.55);
   margin-bottom: 24px;
@@ -416,7 +416,7 @@ html { scroll-behavior: smooth; }
 }
 
 .am-sessions-label {
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 0.28em;
   color: rgba(13,30,42,0.55);
   text-transform: uppercase;
@@ -426,7 +426,7 @@ html { scroll-behavior: smooth; }
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   font-weight: 200;
-  font-size: 16px;
+  font-size: 20px;
   color: rgba(13,30,42,0.60);
   letter-spacing: 0.04em;
 }
@@ -443,12 +443,12 @@ html { scroll-behavior: smooth; }
 .am-session-n {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: 14px;
+  font-size: 18px;
   color: rgba(13,30,42,0.2);
 }
 
 .am-session-name {
-  font-size: 12px;
+  font-size: 15px;
   letter-spacing: 0.1em;
   color: rgba(13,30,42,0.7);
   font-weight: 300;
@@ -462,7 +462,7 @@ html { scroll-behavior: smooth; }
 }
 
 .am-session-detail {
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.14em;
   color: rgba(13,30,42,0.50);
   text-align: right;
@@ -519,7 +519,7 @@ html { scroll-behavior: smooth; }
 }
 
 .am-contact-label {
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 0.28em;
   color: rgba(160,200,220,0.35);
   margin-bottom: 24px;
@@ -545,7 +545,7 @@ html { scroll-behavior: smooth; }
 }
 
 .am-contact p {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 2.0;
   color: rgba(160,200,220,0.4);
   font-weight: 200;
