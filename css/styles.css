@@ -175,11 +175,11 @@ html { scroll-behavior: smooth; }
 }
 
 .am-hero p {
-  font-size: 12px;
+  font-size: 15px;
   letter-spacing: 0.14em;
   color: rgba(13,30,42,0.48);
   line-height: 1.9;
-  max-width: 300px;
+  max-width: 360px;
   margin: 0 auto 36px;
   font-weight: 200;
   transition: color 0.6s ease;
@@ -293,11 +293,11 @@ html { scroll-behavior: smooth; }
 }
 
 .am-keyword-desc {
-  font-size: 12px;
+  font-size: 15px;
   letter-spacing: 0.18em;
   color: rgba(13,30,42,0.60);
   line-height: 1.8;
-  max-width: 120px;
+  max-width: 160px;
   margin: 0 auto;
 }
 
@@ -786,6 +786,7 @@ html { scroll-behavior: smooth; }
   .am-about-img { min-height: 260px; }
   .am-about-text { padding: 48px 28px; }
   .am-about h2 { font-size: 34px; }
+  .am-about p { font-size: 17px; }
 
   .am-sessions { padding: 48px 24px; }
   .am-session {
@@ -794,7 +795,7 @@ html { scroll-behavior: smooth; }
     gap: 8px 16px;
     padding: 20px 0;
   }
-  .am-session-desc { grid-column: 2; }
+  .am-session-desc { grid-column: 2; font-size: 17px; }
   .am-session-detail { grid-column: 2; text-align: left; }
 
   .am-quote { padding: 60px 28px; }
