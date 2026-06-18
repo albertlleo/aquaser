@@ -189,9 +189,10 @@ html { scroll-behavior: smooth; }
 }
 
 .am-hero-cta {
-  font-size: 12px;
+  font-size: 15px;
+  font-weight: 400;
   letter-spacing: 0.26em;
-  color: rgba(13,30,42,0.52);
+  color: #B8735A;
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -199,7 +200,7 @@ html { scroll-behavior: smooth; }
   transition: color 0.2s ease, opacity 0.6s ease;
 }
 
-.am-hero-cta:hover { color: rgba(13,30,42,0.8); }
+.am-hero-cta:hover { color: #9a5e47; }
 
 .am-hero-cta-line {
   width: 20px;
@@ -214,9 +215,9 @@ html { scroll-behavior: smooth; }
   bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 0.24em;
-  color: rgba(13,30,42,0.50);
+  color: rgba(255,255,255,0.85);
   z-index: 3;
   text-transform: uppercase;
   white-space: nowrap;
@@ -226,12 +227,12 @@ html { scroll-behavior: smooth; }
 /* Text adapts to light-on-dark when video is active */
 .am-hero.has-video .am-hero-eyebrow       { color: rgba(255,255,255,0.85); }
 .am-hero.has-video h1                      { color: #E8F0F5; }
-.am-hero.has-video .am-hero-line           { background: rgba(232,240,245,0.25); }
+.am-hero.has-video .am-hero-line           { background: #B8735A; }
 .am-hero.has-video .am-hero p             { color: rgba(255,255,255,0.85); }
-.am-hero.has-video .am-hero-cta           { color: rgba(232,240,245,0.65); }
-.am-hero.has-video .am-hero-cta:hover     { color: rgba(232,240,245,0.9); }
-.am-hero.has-video .am-hero-cta-line      { background: rgba(232,240,245,0.35); }
-.am-hero.has-video .am-hero-scroll        { color: rgba(232,240,245,0.3); }
+.am-hero.has-video .am-hero-cta           { color: #B8735A; }
+.am-hero.has-video .am-hero-cta:hover     { color: #9a5e47; }
+.am-hero.has-video .am-hero-cta-line      { background: #B8735A; }
+.am-hero.has-video .am-hero-scroll        { color: rgba(255,255,255,0.85); }
 
 /* ── Strip ──────────────────────────────────────────────────────────── */
 .am-strip {
@@ -247,7 +248,7 @@ html { scroll-behavior: smooth; }
 .am-strip-item {
   font-size: 13px;
   letter-spacing: 0.24em;
-  color: rgba(13,30,42,0.52);
+  color: rgba(13,30,42,0.85);
   text-transform: uppercase;
 }
 
