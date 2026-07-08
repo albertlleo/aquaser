@@ -402,7 +402,7 @@ html { scroll-behavior: smooth; }
 .am-about--reverse .am-about-img { order: 2; }
 
 .am-about-img--space {
-  background: url('../images/space.jpg') center 10% / cover no-repeat;
+  background: url('../images/hotel2.jpg') center center / cover no-repeat;
 }
 
 /* ── Sessions ───────────────────────────────────────────────────────── */
