@@ -12,7 +12,11 @@
       "Bash(git ls-tree *)",
       "Bash(sips -s format jpeg -s formatOptions 80 hotel2.png --out hotel2.jpg)",
       "Bash(sips -s format jpeg -s formatOptions 80 riu.png --out riu.jpg)",
-      "Bash(sips -s format jpeg -s formatOptions 80 riu2.jpeg --out riu2.jpg)"
+      "Bash(sips -s format jpeg -s formatOptions 80 riu2.jpeg --out riu2.jpg)",
+      "Bash(git fetch *)",
+      "Bash(git push *)",
+      "Bash(git config *)",
+      "Bash(git pull *)"
     ]
   }
 }
