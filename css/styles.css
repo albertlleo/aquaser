@@ -231,7 +231,7 @@ html { scroll-behavior: smooth; }
 .am-hero.has-video .am-hero p             { color: rgba(255,255,255,0.85); }
 .am-hero.has-video .am-hero-cta           { color: #ffffff; }
 .am-hero.has-video .am-hero-cta:hover     { color: rgba(255,255,255,0.75); }
-.am-hero.has-video .am-hero-cta-line      { background: #ffffff; }
+.am-hero.has-video .am-hero-cta-line      { background: #B8735A; }
 .am-hero.has-video .am-hero-scroll        { color: rgba(255,255,255,0.85); }
 
 /* ── Strip ──────────────────────────────────────────────────────────── */
@@ -538,7 +538,7 @@ html { scroll-behavior: smooth; }
 }
 
 .am-quote-attr {
-  font-size: 10px;
+  font-size: 16px;
   letter-spacing: 0.26em;
   color: rgba(13,30,42,0.48);
   text-transform: uppercase;
@@ -562,7 +562,7 @@ html { scroll-behavior: smooth; }
 .am-contact-label {
   font-size: 13px;
   letter-spacing: 0.28em;
-  color: rgba(160,200,220,0.35);
+  color: rgba(160,200,220,0.75);
   margin-bottom: 24px;
   text-transform: uppercase;
 }
@@ -588,16 +588,16 @@ html { scroll-behavior: smooth; }
 .am-contact p {
   font-size: 17px;
   line-height: 2.0;
-  color: rgba(160,200,220,0.4);
+  color: rgba(160,200,220,0.8);
   font-weight: 200;
   margin-bottom: 36px;
   letter-spacing: 0.02em;
 }
 
 .am-contact-btn {
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 0.22em;
-  color: rgba(160,200,220,0.45);
+  color: rgba(160,200,220,0.85);
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -636,7 +636,7 @@ html { scroll-behavior: smooth; }
 }
 
 .am-form-label {
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 0.26em;
   color: rgba(13,30,42,0.55);
   text-transform: uppercase;
@@ -650,7 +650,7 @@ html { scroll-behavior: smooth; }
   padding: 10px 0;
   font-family: 'Jost', sans-serif;
   font-weight: 200;
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 0.04em;
   color: rgba(13,30,42,0.7);
   outline: none;
@@ -663,11 +663,11 @@ html { scroll-behavior: smooth; }
 .am-form-textarea:focus { border-color: rgba(13,30,42,0.45); }
 
 .am-form-input::placeholder,
-.am-form-textarea::placeholder { color: rgba(13,30,42,0.2); }
+.am-form-textarea::placeholder { color: rgba(13,30,42,0.35); font-size: 16px; }
 
 .am-form-submit {
   padding: 0;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 0.22em;
   color: rgba(13,30,42,0.65);
   display: inline-flex;
@@ -762,14 +762,14 @@ html { scroll-behavior: smooth; }
   font-style: italic;
   font-weight: 200;
   font-size: 14px;
-  color: rgba(180,210,230,0.25);
+  color: #ffffff;
   letter-spacing: 0.1em;
 }
 
 .am-footer-copy {
   font-size: 10px;
   letter-spacing: 0.18em;
-  color: rgba(180,210,230,0.12);
+  color: rgba(255,255,255,0.7);
 }
 
 /* ── Wave dividers ──────────────────────────────────────────────────── */
@@ -797,8 +797,8 @@ html { scroll-behavior: smooth; }
 /* ── Fade-in on scroll ──────────────────────────────────────────────── */
 .fade-in {
   opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateY(36px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
 }
 
 .fade-in.is-visible {
