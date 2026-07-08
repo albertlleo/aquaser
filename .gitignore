@@ -1,2 +1,7 @@
 .idea/
 *.iml
+images/*.jpg
+images/*.png
+images/*.jpeg
+images/.gitkeep
+videos/hero.mp4
