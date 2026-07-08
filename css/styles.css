@@ -237,7 +237,6 @@ html { scroll-behavior: smooth; }
 /* ── Strip ──────────────────────────────────────────────────────────── */
 .am-strip {
   background: #E0ECF4;
-  border-bottom: 0.5px solid rgba(13,30,42,0.08);
   padding: 14px 36px;
   display: flex;
   justify-content: center;
@@ -258,7 +257,7 @@ html { scroll-behavior: smooth; }
   padding: 60px 44px;
   display: flex;
   justify-content: center;
-  border-bottom: 0.5px solid rgba(13,30,42,0.08);
+  border-bottom: 0.5px solid rgba(184,115,90,0.35);
 }
 
 .am-keyword {
@@ -276,7 +275,7 @@ html { scroll-behavior: smooth; }
   transform: translateY(-50%);
   width: 0.5px;
   height: 40px;
-  background: rgba(13,30,42,0.12);
+  background: rgba(184,115,90,0.35);
 }
 
 .am-keyword-word {
@@ -366,7 +365,7 @@ html { scroll-behavior: smooth; }
 .am-about-line {
   width: 20px;
   height: 0.5px;
-  background: #B8735A;
+  background: rgba(184,115,90,0.35);
   margin-bottom: 24px;
 }
 
@@ -415,7 +414,7 @@ html { scroll-behavior: smooth; }
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border-bottom: 0.5px solid rgba(13,30,42,0.1);
+  border-bottom: 0.5px solid rgba(184,115,90,0.35);
   padding-bottom: 24px;
 }
 
@@ -524,7 +523,7 @@ html { scroll-behavior: smooth; }
   padding: 80px 44px;
   background: #EEF3F7;
   text-align: center;
-  border-top: 0.5px solid rgba(13,30,42,0.08);
+  border-top: 0.5px solid rgba(184,115,90,0.35);
 }
 
 .am-quote-mark {
@@ -565,7 +564,8 @@ html { scroll-behavior: smooth; }
   padding: 64px 44px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 36px;
   border-right: 0.5px solid rgba(180,210,230,0.06);
 }
 
@@ -591,7 +591,7 @@ html { scroll-behavior: smooth; }
 .am-contact-line {
   width: 20px;
   height: 0.5px;
-  background: rgba(160,200,220,0.2);
+  background: #B8735A;
   margin-bottom: 24px;
 }
 
@@ -656,7 +656,7 @@ html { scroll-behavior: smooth; }
 .am-form-textarea {
   background: transparent;
   border: none;
-  border-bottom: 0.5px solid rgba(13,30,42,0.18);
+  border-bottom: 0.5px solid rgba(184,115,90,0.35);
   padding: 10px 0;
   font-family: 'Jost', sans-serif;
   font-weight: 200;
