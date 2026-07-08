@@ -78,6 +78,30 @@ html { scroll-behavior: smooth; }
   text-transform: uppercase;
 }
 
+.am-nav-lang {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.am-lang-btn {
+  display: block;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.am-lang-flag {
+  width: 22px;
+  height: 15px;
+  border-radius: 2px;
+  display: block;
+  opacity: 0.4;
+  transition: opacity 0.2s ease;
+}
+
+.am-lang-btn--active .am-lang-flag { opacity: 1; }
+.am-lang-btn:hover .am-lang-flag { opacity: 0.9; }
+
 .am-nav-mail {
   display: flex;
   align-items: center;
