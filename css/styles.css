@@ -884,6 +884,7 @@ html { scroll-behavior: smooth; }
   .am-hero h1 { font-size: 36px; margin-bottom: 16px; }
   .am-hero p { margin-bottom: 20px; }
   .am-hero-line { margin-bottom: 16px; }
+  .am-hero-cta { margin-top: 24px; }
   .am-about h2, .am-contact h2 { font-size: 28px; }
   .am-sessions { padding: 40px 20px; }
   .am-quote p { font-size: 18px; }
