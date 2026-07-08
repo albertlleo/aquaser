@@ -212,29 +212,16 @@ html { scroll-behavior: smooth; }
 }
 
 .am-hero-scroll {
-  position: absolute;
-  bottom: 24px;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 13px;
   letter-spacing: 0.24em;
   color: rgba(255,255,255,0.85);
-  z-index: 3;
   text-transform: uppercase;
   white-space: nowrap;
   transition: color 0.6s ease;
+  margin: 20px 0;
 }
 
-.am-hero-scroll--mobile { display: none; }
-
 @media (max-width: 480px) {
-  .am-hero-scroll--desktop { display: none; }
-  .am-hero-scroll--mobile {
-    display: block;
-    position: static;
-    transform: none;
-    margin-bottom: 20px;
-  }
 }
 
 /* Text adapts to light-on-dark when video is active */
@@ -899,5 +886,5 @@ html { scroll-behavior: smooth; }
   .am-hero-cta { margin-top: 24px; }
   .am-about h2, .am-contact h2 { font-size: 28px; }
   .am-sessions { padding: 40px 20px; }
-  .am-quote p { font-size: 18px; }
+  .am-quote p { font-size: 26px; }
 }
